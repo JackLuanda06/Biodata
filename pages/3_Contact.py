@@ -28,7 +28,6 @@ with col_info:
             use_container_width=True
         )
         st.divider()
-        st.markdown("**Jam Response:** Pasti Segera akan saya Balas dalam Waktu 1 x 24 jam")
         
 #wb_discord = st.secrets["web_discord"]
 
