@@ -43,7 +43,29 @@ with col_des_asa:
         > **Asa**, seorang gadis disabilitas penjual asongan, hidup sebatang kara di tengah hiruk-pikuk perkotaan yang dingin. 
         > Namun, sore itu menjadi titik balik hidupnya saat dua takdir mempertemukannya sekaligus: sebuah buku misterius milik seorang pria yang terjatuh, dan seekor anjing kecil disabilitas yang terlantar.
     """)
+     st.link_button("Click Me", "https://youtu.be/CZltuDC_OPY?si=8JIhI-M0fsvUkCW7")
 
+col_ung, col_des_ung = st.columns([4,4], vertical_alignment="center")
+
+with col_ung:
+     st.image("Uang Bersih.jpg", width=300)
+
+with col_des_ung:
+     st.markdown("""
+        **Sebagai:**
+        * Scriptwriter
+        * 3D Rigging Artist
+                      
+        ---
+                      
+        > Andrew adalah seekor kucing yang bekerja di sebuah perusahaan swasta. Suatu hari di tengah 
+        malam yang sunyi, ia lembur mengerjakan pekerjaan tambahan yang harus diselesaikan pada 
+        malam itu. Namun, ia tiba tiba mendapatkan perintah dari bosnya yang sangat mencurigakan. 
+        Karena itu perintah atasan, Andrew tanpa pikir panjang langsung mematuhi perintah tersebut 
+        hingga suatu kejadian tak diinginkan pun terjadi
+    """)
+     st.link_button("Click Me", "https://youtu.be/33E4YSyUyQI?si=AIWPuJnHLf96PBF2")
+     
 col_mpt, col_des_mpt = st.columns([4,4], vertical_alignment="center")
 
 with col_mpt:
@@ -61,6 +83,7 @@ with col_des_mpt:
         > 
         > Lima mahasiswa peserta KKN kini harus berlomba dengan mepetnya waktu. Mereka dipaksa memeras otak untuk menciptakan alasan paling logis dan tepat demi menutupi kelalaian mereka sebelum Pak Kades yang ganas dan kekar datang menuntut pertanggungjawaban.
     """)
+
 st.divider()
 st.subheader("SERTIFIKAT 📃")
 
@@ -68,10 +91,8 @@ col_amk, col_walrus = st.columns([4,4], vertical_alignment="center")
 
 with col_amk:
     st.image("SertifikatAmikom.png", caption="Proyek kolaborasi bersama tim saat kelas 10 SMK yang berhasil meraih Juara 1 Kategori Terfavorit dan Juara 2 Umum.")
-    st.link_button("Click Me", "https://youtu.be/CZltuDC_OPY?si=8JIhI-M0fsvUkCW7")
 with col_walrus:
     st.image("Juara 1 - Walrus Team.jpg", caption="Kompetisi PPATK (2024)Proyek kolaborasi bersama tim yang berhasil meraih Juara 1 Umum.")
-    st.link_button("Click Me", "https://youtu.be/33E4YSyUyQI?si=AIWPuJnHLf96PBF2")
 
 st.divider()
 st.subheader("PROGRAMING 💻")
@@ -80,86 +101,6 @@ col_vid, col_kode = st.columns([4,4], vertical_alignment="center")
 
 with col_vid:
     st.video("AyoNabung.mp4", subtitles=None)
-
-code = """import streamlit as st
-from streamlit_gsheets import GSheetsConnection
-import pandas as pd
-
-#Membuat Judul
-st.set_page_config(page_icon="Icon.png", page_title="Catatan Keuangan")
-col1, col2, col3 = st.columns(3)
-with col2:
-    st.image("Logo Gunadar.jpg", use_container_width=True)
-st.title("Catatan Keuangan")
-st.markdown("Masukkan Rincian Keuangan Anda")
-
-#Membuat Koneksi Ke GSheets
-conn = st.connection("gsheets", type=GSheetsConnection)
-
-#Koneksikan Table Dalam Gsheets
-existing_data = conn.read(worksheet="Catatan", usecols=list(range(6)), ttl=5)
-existing_data = existing_data.dropna(how="all")
-
-#List Jenis Tabungan dan Bank
-tabungan =[
-    "Tabungan",
-    "Giro",
-    "Deposit",
-    "Anak",
-    "Investasi"
-]
-
-bank =[
-    "BCA",
-    "BRI",
-    "BNI",
-    "Mandiri",
-]
-
-#Window Form Pengguna Baru
-with st.form(key="Form Pengguna"):
-    nama_pengguna = st.text_input(label="Nama pengguna*")
-    jenis_tabungan = st.selectbox("Jenis Tabungan", options=tabungan, index=None)
-    bank_tujuan = st.selectbox("Bank Yang Dituju", options=bank, index=None)
-    nominal_tabungan = st.text_input("Nominal Bulan Ini")
-    tanggal_input = st.date_input(label="Tanggal Hari Ini")
-    info_tambahan = st.text_area(label="Informasi")
-
-    st.markdown("*Diperlukan")
-
-    submit_button = st.form_submit_button(label="Submit", type="primary")
-
-    if submit_button:
-        #Cek Ketentuan Form
-        if not nama_pengguna or not jenis_tabungan:
-            st.warning("Data Belum Lengkap")
-            st.stop()
-        elif existing_data["Nama Pengguna"].astype(str).str.contains(nama_pengguna, na=False).any():
-            st.warning("Nama Sudah Terdaftar")
-            st.stop()
-        else:
-            #Membuat kolom baru pada data Gsheet
-            data_pengguna = pd.DataFrame(
-                [
-                    {
-                        "Nama Pengguna": nama_pengguna,
-                        "Jenis Tabungan": jenis_tabungan,
-                        "Bank": bank_tujuan,
-                        "Nominal": nominal_tabungan,
-                        "Tanggal": tanggal_input.strftime("%Y-%m-%d"),
-                        "Info Tambahan": info_tambahan,
-                    }
-                ]
-            )
-
-            update_data = pd.concat([existing_data, data_pengguna], ignore_index=True)
-
-            #Koneksikan GSheet dengan data form
-            conn.update(worksheet="Catatan", data=update_data)
-
-            st.success("Data Berhasil Ditambahkan")
-            st.balloons()
-"""
 
 with col_kode:
         st.markdown("### **Aplikasi Input Data (Streamlit + GSheets API)**")
@@ -171,8 +112,6 @@ with col_kode:
         * **Database Backend:** Google Sheets API via `streamlit-gsheets`
         * **Fitur:** Validasi form input, klasifikasi jenis tabungan, dan *update* data otomatis.
         """)
-with st.expander("🔍 Lihat Source Code Lengkap (Python)"):
-     st.code(code)
 
 st.divider()
 

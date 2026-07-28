@@ -11,9 +11,13 @@ story, skill, experience = st.tabs(["📖 My Story", "🛠️ Skills", "💼 Exp
 with story:
     st.title("My Story")
     st.markdown("""
-    Perjalanan profesional saya dimulai lebih awal sejak masa sekolah di SMK Raden Umar Said Kudus. Pada tahun 2023, saat masih duduk di kelas 11, saya mendapatkan kesempatan luar biasa untuk magang selama satu tahun penuh di RUS Animation Studio sebagai 3D Rigging Artist. Di sana, saya terlibat langsung dalam memproduksi berbagai proyek animasi besar seperti Wakakibo Season 1, La Luz de Aisha, Nyla, dan masih banyak lagi.
-
-    Setahun kemudian, pada tahun 2024, saya lulus dari SMK dengan nilai yang memuaskan dan membawa bekal skill yang sudah matang ditempa oleh industri. Tak lama setelah lulus, tepatnya pada bulan Oktober 2024, saya berhasil mewujudkan salah satu impian terbesar saya sejak sekolah: diterima bekerja di Shoh Entertainment. Selama 7 bulan mendedikasikan diri di sana, saya sangat bersyukur bisa mengasah keahlian teknis ke tingkat yang lebih tinggi, mendapatkan banyak skill baru, sekaligus membangun relasi profesional yang berharga di industri animasi.
+    Perjalanan profesional saya dimulai lebih awal sejak masa sekolah di SMK Raden Umar Said Kudus. Pada tahun 2023, saat masih duduk di kelas 11, saya mendapatkan kesempatan luar biasa untuk magang selama satu tahun penuh di RUS Animation Studio sebagai 3D Rigging Artist. 
+    
+    Di sana, saya terlibat langsung dalam memproduksi berbagai proyek animasi besar seperti [Wakakibo Season 1](https://youtu.be/u_fSd-MHB0U?si=wDaZWDKzbpB-WPez), [La Luz de Aisha](https://youtu.be/dJtNhpyhflI?si=bGAi0X2qgUIWZqjP), [Nyla](https://youtu.be/vBnnBtp8JnI?si=EN-lu0lEdQIZ44SI), dan [Asa](https://youtu.be/CZltuDC_OPY?si=8JIhI-M0fsvUkCW7).
+    
+    Setahun kemudian, pada tahun 2024, saya lulus dari SMK dengan nilai yang memuaskan dan membawa bekal skill yang sudah matang ditempa oleh industri. Tak lama setelah lulus, tepatnya pada bulan Oktober 2024, saya berhasil mewujudkan salah satu impian terbesar saya sejak sekolah: diterima bekerja di Shoh Entertainment. 
+    
+    Selama 7 bulan mendedikasikan diri di sana, saya sangat bersyukur bisa mengasah keahlian teknis ke tingkat yang lebih tinggi, mendapatkan banyak skill baru, sekaligus membangun relasi profesional yang berharga di industri animasi.
     """)
 
 with skill:
