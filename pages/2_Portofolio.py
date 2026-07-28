@@ -26,6 +26,8 @@ with col_des:
         > **Catatan Showreel:**  
         > Sebagian besar proyek besar yang saya kerjakan di studio animasi dilindungi oleh dokumen **NDA (Non-Disclosure Agreement)**, sehingga tidak semua karya dapat dipublikasikan secara bebas di media sosial. Showreel di samping adalah beberapa kompilasi pengerjaan yang dapat saya bagikan.
         """)
+    
+st.divider()
 
 col_asa, col_des_asa = st.columns([4,4], vertical_alignment="center")
 
@@ -44,6 +46,8 @@ with col_des_asa:
         > Namun, sore itu menjadi titik balik hidupnya saat dua takdir mempertemukannya sekaligus: sebuah buku misterius milik seorang pria yang terjatuh, dan seekor anjing kecil disabilitas yang terlantar.
     """)
      st.link_button("Click Me", "https://youtu.be/CZltuDC_OPY?si=8JIhI-M0fsvUkCW7")
+
+st.divider()
 
 col_ung, col_des_ung = st.columns([4,4], vertical_alignment="center")
 
@@ -65,7 +69,9 @@ with col_des_ung:
         hingga suatu kejadian tak diinginkan pun terjadi
     """)
      st.link_button("Click Me", "https://youtu.be/33E4YSyUyQI?si=AIWPuJnHLf96PBF2")
-     
+
+st.divider()
+
 col_mpt, col_des_mpt = st.columns([4,4], vertical_alignment="center")
 
 with col_mpt:
