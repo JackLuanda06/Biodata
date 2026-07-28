@@ -24,7 +24,7 @@ with col_des:
         ---
         
         > **Catatan Showreel:**  
-        > Sebagian besar proyek besar yang saya kerjakan di studio animasi dilindungi oleh dokumen **NDA (Non-Disclosure Agreement)**, sehingga tidak semua karya dapat dipublikasikan secara bebas di media sosial. Showreel di samping adalah beberapa kompilasi pengerjaan yang dapat saya bagikan.
+        > Proyek besar yang saya kerjakan di studio animasi dilindungi oleh dokumen **NDA (Non-Disclosure Agreement)**, sehingga tidak semua karya dapat dipublikasikan secara bebas di media sosial. Showreel yang saya tampilkan adalah beberapa kompilasi pengerjaan yang dapat saya bagikan.
         """)
     
 st.divider()
@@ -87,7 +87,7 @@ with col_des_mpt:
                  
         > **Lima menit** menuju acara penyuluhan tanpa satu pun materi presentasi yang rampung! 
         > 
-        > Lima mahasiswa peserta KKN kini harus berlomba dengan mepetnya waktu. Mereka dipaksa memeras otak untuk menciptakan alasan paling logis dan tepat demi menutupi kelalaian mereka sebelum Pak Kades yang ganas dan kekar datang menuntut pertanggungjawaban.
+        > Lima mahasiswa peserta KKN kini harus berlomba dengan mepetnya waktu. Mereka dipaksa memeras otak untuk menciptakan alasan paling logis dan tepat demi menutupi kelalaian mereka sebelum Pak Kades yang ganas dan kekar datang menuntut pertanggungjawaban (In Progress).
     """)
 
 st.divider()
