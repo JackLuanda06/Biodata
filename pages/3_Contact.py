@@ -27,7 +27,6 @@ with col_info:
             file_name="CV Dzaky Aqiilah Luanda.pdf",
             use_container_width=True
         )
-        st.divider()
         
 #wb_discord = st.secrets["web_discord"]
 
