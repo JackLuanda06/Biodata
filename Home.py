@@ -18,7 +18,7 @@ with col_judul:
 st.divider()
 
 st.markdown("""
-Halo! Saya seorang 3D Rigging Artist yang Sangat Menyukai seni animasi dengan logika teknis. 
+Halo! Saya seorang 3D Rigging Artist yang sangat menyukai seni animasi dengan logika teknis. 
 
 Saya menghabiskan masa studi di SMK Raden Umar Said Kudus dengan fokus pada Animasi 3D termasuk pengalaman berharga magang selama 1 tahun di RUS Animation Studio dan bekerja selama 7 bulan di Shoh Entertainment, Kemudian saya memutuskan untuk melangkah lebih jauh.
 
