@@ -5,7 +5,7 @@ st.set_page_config(layout="wide")
 col_foto, col_judul = st.columns([1,4], vertical_alignment="center")
 
 with col_foto:
-    st.image("Foto_Dzaky.jpg", width=450)
+    st.image("Foto Dzaky.jpeg", width=450)
 
 with col_judul:
     st.markdown("""
@@ -18,9 +18,11 @@ with col_judul:
 st.divider()
 
 st.markdown("""
-Halo! Saya adalah seorang 3D Rigging Artist yang gemar menjembatani seni animasi dengan logika teknis. Setelah menghabiskan 3 tahun masa studi di SMK Raden Umar Said Kudus fokus pada Animasi 3D termasuk pengalaman berharga magang selama 1 tahun di RUS Animation Studio dan bekerja selama 7 bulan di Shoh Entertainment saya memutuskan untuk melangkah lebih jauh.
+Halo! Saya seorang 3D Rigging Artist yang Sangat Menyukai seni animasi dengan logika teknis. 
 
-Saat ini, saya aktif menempuh kuliah di jurusan Teknik Informatika Universitas Gunadarma. Langkah ini saya ambil untuk memperluas cakrawala keahlian teknis saya (programming/scripting), demi menghadirkan solusi rigging yang lebih adaptif, efisien, dan siap bersaing di dunia kerja modern.
+Saya menghabiskan masa studi di SMK Raden Umar Said Kudus dengan fokus pada Animasi 3D termasuk pengalaman berharga magang selama 1 tahun di RUS Animation Studio dan bekerja selama 7 bulan di Shoh Entertainment, Kemudian saya memutuskan untuk melangkah lebih jauh.
+
+Saat ini, saya aktif menempuh kuliah di jurusan Teknik Informatika Universitas Gunadarma. Langkah ini saya ambil untuk memperluas cakrawala keahlian teknis saya pada (programming/scripting), demi menghadirkan solusi rigging yang lebih adaptif, efisien dan siap bersaing di dunia kerja modern.
 """)
 
 st.markdown("#### **🧭 Ketahui saya lebih dalam:**")
